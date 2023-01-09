@@ -3,8 +3,9 @@ $(() => {
 
     $('input').on('keydown', (e) => {
         const keyCode = e.which;
+        const $target = $(e.target);
         if (actions.hasOwnProperty(keyCode)) {
-            actions[keyCode](e);
+            actions[keyCode]($target);
         }
     });
 
@@ -31,7 +32,24 @@ $(() => {
 });
 
 const actions = {
-    13: (e) => {
-        console.log(e);
+    13: ($target) => {
+        const command = $target.val();
+        if (command.trim().toLowerCase() === 'generate --stardate') {
+            const now = Date.now();
+            $('#command-history').append(
+                `<p> Star Date for ${Date(now)} is ${now}</p>`
+            );
+        } else if (command.trim().toLowerCase() === 'help') {
+            $('#command-history').append(
+                `<p>generate {--stardate}</p><p>This command will create today's stardate the AIMLESS way.</p>`
+            );
+        } else {
+            const command = $target.val();
+            $('#command-history').append(
+                `<p>Command ${command} was not found. Try running 'help'</p>`
+            );
+        }
+
+        $target.val('');
     },
 };
