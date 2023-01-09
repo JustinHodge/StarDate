@@ -225,17 +225,48 @@ nav.site ul li {
   width: auto;
 }
 
+.header {
+  height: 15%;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+}
+.footer > div {
+  margin-left: 10px;
+}
+
+.content {
+  height: 75%;
+  overflow-y: scroll;
+}
+.content::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #212121;
+}
+.content::-webkit-scrollbar {
+  width: 10px;
+  background-color: lighter(#212121, 50%);
+}
+.content::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  background-color: #444;
+}
+
 .wrapper {
   animation: power-on 1s 1;
   margin: 0;
   overflow: hidden;
   padding: 0;
   width: 100%;
+  height: 100%;
   -webkit-animation: power-on 1s 1;
 }
 
 .content {
-  animation: scroll 3s 1;
   overflow: hidden;
   padding: 40px;
   position: relative;
@@ -449,19 +480,6 @@ input[type=submit]:hover,
   border-right-color: #050505;
   border-top-color: #111111;
   box-shadow: inset 0 0 10rem #020202, inset 0 0 3rem black, 0 0 10rem black;
-}
-.terminal::-webkit-scrollbar-track {
-  border-radius: 0;
-  background-color: #212121;
-}
-.terminal::-webkit-scrollbar {
-  width: 10px;
-  background-color: lighter(#212121, 50%);
-}
-.terminal::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  box-shadow: inset 0 0 5px rgb(0, 0, 0);
-  background-color: #444;
 }
 
 /*# sourceMappingURL=styles.css.map */
