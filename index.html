@@ -15,12 +15,12 @@
             <div class="quote-container">
                 <i class="pin"></i>
                 <blockquote class="note yellow">
-                    H1dd3nV4ll3yR4nch
+                    <p class="password-manager">H1dd3nV4ll3yR4nch</p>
                     <cite class="author">P2</cite>
                 </blockquote>
             </div>
             <div class="wrapper">
-                <div class="content">
+                <div class="header">
                     <header class="site clearfix">
                         <div class="col one">
                             <img src="https://theaamgroup.com/lib/img/logos/the-aam-group-logo-white-header.png"
@@ -30,7 +30,8 @@
                             <h4>AAM USA INC. <br /> AIMLESS</h4>
                         </div>
                     </header>
-
+                </div>
+                <div class="content">
                     <div id="login">
                         <p>AAM Integrated Machine Learning Expanded Stardating System (AIMLESS)</p>
                         <p>SYSADM - paul2@theaamgroup.com</p>
@@ -45,21 +46,46 @@
                             <label>User Name:</label><input id="username" type="text"></input>
                             <label>Password: </label><input id="password" type="password"></input>
                         </div>
-                        <div>
-                            <button type="button" id="login-button" class="button">LOGIN</button>
-                            <span class="hidden dev-oops">
-                                !--TODO: (P2) This password changes regularly. I need a way to remember it. </span>
-                        </div>
+
                     </div>
                     <div id="interface" class="hidden">
-
-                        <label>λ-</label><input type="text" />
-                        <div>
-                            <button type="button" id="logout-button" class="button">LOGOUT</button>
+                        <div id="command-history">
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
+                            <p class="history-entry">test</p>
                         </div>
+                        <hr>
+                        <label>λ-</label><input type="text" />
 
                     </div>
 
+                </div>
+                <div class="footer">
+                    <div>
+                        <button type="button" id="login-button" class="button">LOGIN</button>
+                        <span class="hidden dev-oops">
+                            <br /> ERROR: User Name or Password incorrect. Contact the SYSADM!
+                            <br />!--TODO: (P2) This password changes regularly. I need a way to remember it. -->
+                        </span>
+                    </div>
+                    <div>
+                        <button type="button" id="logout-button" class="button">LOGOUT</button>
+                    </div>
                 </div>
             </div>
         </div>

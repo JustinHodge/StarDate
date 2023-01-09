@@ -2,9 +2,8 @@ $(() => {
     $('#title').focus();
 
     $('input').on('keydown', (e) => {
-        const keyCode = e.key;
+        const keyCode = e.which;
         if (actions.hasOwnProperty(keyCode)) {
-            //@ts-ignore
             actions[keyCode](e);
         }
     });
@@ -12,10 +11,10 @@ $(() => {
     $('#login-button').on('click', (e) => {
         const username = $('#username').val();
         const password = $('#password').val();
-        const stickyNoteText = $('.note.yellow').text().trim();
+        const stickyNoteText = $('.password-manager').text().trim();
 
         if (
-            username === 'paul2@theaamgroup.com' &&
+            username.toLowerCase() === 'paul2@theaamgroup.com' &&
             password === stickyNoteText
         ) {
             $('#login').addClass('hidden');
