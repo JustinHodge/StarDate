@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Empty project</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="terminal">
+            <div class="scanline"></div>
+            <div class="overlay"></div>
+            <div class="quote-container">
+                <i class="pin"></i>
+                <blockquote class="note yellow">
+                    H1dd3nV4ll3yR4nch
+                    <cite class="author">P2</cite>
+                </blockquote>
+            </div>
+            <div class="wrapper">
+                <div class="content clearfix">
+                    <header class="site clearfix">
+                        <div class="col one">
+                            <img src="https://theaamgroup.com/lib/img/logos/the-aam-group-logo-white-header.png"
+                                alt="The AAM Group" width="740" height="729" id="logo-v" />
+                        </div>
+                        <div class="col two">
+                            <h4>AAM USA INC. <br /> AIMLESS</h4>
+                        </div>
+                    </header>
+
+                    <div id="login">
+                        <p>AAM Integrated Machine Learning Expanded Stardating System (AIMLESS)</p>
+                        <p>SYSADM - paul2@theaamgroup.com</p>
+
+                        <p class="clear"><br /></p>
+
+                        <p>Welcome to the AAM Integrated Machine Learning Expanded Stardating System (AIMLESS). <br />
+                            This AIMLESS CLI interface has been provided for your convenience. <br /> If you experience
+                            any difficulties please contact the SYSADM. <br />Thank you for choosing AIMLESS services.
+                        </p><br />
+                        <div id="login-panel">
+                            <label>User Name:</label><input id="username" type="text"></input>
+                            <label>Password: </label><input id="password" type="password"></input>
+                        </div>
+                        <div>
+                            <button type="button" id="login-button" class="button">LOGIN</button>
+                            <span class="hidden dev-oops">
+                                !--TODO: (P2) This password changes regularly. I need a way to remember it. </span>
+                        </div>
+                    </div>
+                    <div id="interface" class="hidden">
+
+                        <label>λ-</label><input type="text" />
+                        <div>
+                            <button type="button" id="logout-button" class="button">LOGOUT</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+
+</html>

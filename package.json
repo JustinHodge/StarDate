@@ -1,0 +1,16 @@
+{
+    "name": "star-date",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+        "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+    },
+    "dependencies": {
+        "sass": "^1.57.1"
+    }
+}
