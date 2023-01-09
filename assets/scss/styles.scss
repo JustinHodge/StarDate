@@ -358,6 +358,74 @@ input[type='submit']:hover,
     -o-border-radius: 30px;
 }
 
+.computerFrame2 {
+    top: 30vh;
+    position: absolute;
+    width: 25vw;
+    height: 10vh;
+    background-color: #999999;
+    border: 2px #888888 solid;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 11px #000000de, inset -1px -1px 7px #000000de,
+        5px 5px 11px #000000de, 0px 0px 7px #000000de;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.floppy {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    left: 5%;
+    top: 5%;
+    background-color: #222222;
+    box-shadow: inset 1px 1px 11px #000000de, inset -1px -1px 7px #000000de,
+        1px 1px 11px #000000de, 0px 0px 7px #000000de;
+}
+
+.fingerGrip {
+    position: absolute;
+    width: 10%;
+    height: 74%;
+    background-color: #0d0d0d;
+    top: 12%;
+    left: 45%;
+    border-radius: 3px;
+}
+
+.slot {
+    position: absolute;
+    width: 95%;
+    height: 20%;
+    left: 2.5%;
+    top: 40%;
+    background-color: black;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+div[class^='socket'] {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 67%;
+    background-color: black;
+}
+
+.socket1 {
+    left: 5%;
+}
+
+.socket2 {
+    right: 5%;
+}
+
 .note {
     color: #333;
     position: relative;
