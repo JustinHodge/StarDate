@@ -366,12 +366,61 @@ input[type='submit']:hover,
     background-color: #999999;
     border: 2px #888888 solid;
     border-radius: 20px;
-    box-shadow: inset 1px 1px 11px #000000de, inset -1px -1px 7px #000000de,
-        5px 5px 11px #000000de, 0px 0px 7px #000000de;
+    box-shadow: inset -1px -1px 0px rgb(0 0 0 / 87%),
+        inset -1px -1px 7px rgb(0 0 0 / 87%), 5px 5px 11px rgb(0 0 0 / 87%),
+        0px 0px 7px rgb(0 0 0 / 87%);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+
+.terminal-button {
+    position: absolute;
+    border: 5px gray solid;
+    background-color: darkgray;
+    width: 10vh;
+    height: 10vh;
+    top: 17vh;
+    border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+    box-shadow: inset 1px 1px 11px #000000de, inset -2px -2px 0px 0px #000000de,
+        1px 1px 11px #000000de, 0px 0px 7px #000000de;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    &.power {
+        background-image: url('../images/power-icon.svg');
+    }
+
+    &.reset {
+        background-image: url('../images/reset.svg');
+        left: 25%;
+    }
+}
+
+.power-led {
+    position: absolute;
+    bottom: 5vh;
+    right: 10vh;
+    border: 5px gray solid;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 2.5vh;
+    -webkit-border-radius: 2.5vh;
+    -moz-border-radius: 2.5vh;
+    -ms-border-radius: 2.5vh;
+    -o-border-radius: 2.5vh;
+    background-color: rgb(45, 0, 0);
+    box-shadow: inset 1px 1px 11px #000000de, inset -1px -1px 7px #000000de,
+        1px 1px 11px #000000de, 0px 0px 7px #000000de;
+
+    &.power-on {
+        background-color: rgb(255, 0, 0);
+    }
 }
 
 .floppy {
