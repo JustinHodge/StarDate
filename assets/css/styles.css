@@ -201,21 +201,6 @@ nav.site ul li {
   width: 1px;
 }
 
-.overlay:before {
-  background: linear-gradient(#101010 50%, rgba(16, 16, 16, 0.2) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03));
-  background-size: 100% 3px, 6px 100%;
-  content: "";
-  display: block;
-  pointer-events: none;
-  position: fixed;
-  top: 3%;
-  right: 30%;
-  bottom: 3%;
-  left: 3%;
-  z-index: 2;
-  margin: 25px;
-}
-
 .overlay:after {
   animation: flicker 0.3s infinite;
   background: rgba(16, 16, 16, 0.2);
@@ -228,7 +213,7 @@ nav.site ul li {
   bottom: 3%;
   left: 3%;
   z-index: 2;
-  margin: 25px;
+  margin: 15px 17px;
 }
 
 .col {
@@ -241,10 +226,11 @@ nav.site ul li {
 }
 
 .wrapper {
-  animation: power-on 5s 1;
+  animation: power-on 1s 1;
   margin: 0;
   overflow: hidden;
   padding: 0;
+  -webkit-animation: power-on 1s 1;
 }
 
 .content {
@@ -260,14 +246,6 @@ nav.site ul li {
   height: auto;
   margin: 0 auto;
   width: 200px;
-}
-
-img.pip-hero {
-  display: block;
-  float: left;
-  height: auto;
-  margin: 5px 10px 5px 0;
-  width: 120px;
 }
 
 label {
