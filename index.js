@@ -18,10 +18,34 @@ $(() => {
         }
     });
 
+    $('.terminal-button.power').on('click', (e) => {
+        attemptLogout();
+        togglePower();
+    });
+
+    $('.terminal-button.reset').on('click', (e) => {
+        attemptLogout();
+        togglePower();
+
+        setTimeout(() => {
+            togglePower();
+        }, 1000);
+    });
+
     $('#login-button').on('click', attemptLogin);
 
     $('#logout-button').on('click', attemptLogout);
 });
+
+const togglePower = () => {
+    $('.scanline').toggleClass('power-off');
+    $('.overlay').toggleClass('power-off');
+    $('.wrapper').toggleClass('power-off');
+    $('.scanline').toggleClass('power-up');
+    $('.overlay').toggleClass('power-up');
+    $('.wrapper').toggleClass('power-up');
+    $('.power-led').toggleClass('power-on');
+};
 
 const attemptLogout = () => {
     $('#login').removeClass('hidden');
