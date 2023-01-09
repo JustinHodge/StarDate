@@ -16,6 +16,11 @@
                 <cite class="author">P2</cite>
             </blockquote>
         </div>
+        <div class="controls-container">
+            <div class="speaker">
+
+            </div>
+        </div>
         <div class="terminal">
             <div class="scanline"></div>
             <div class="overlay"></div>
@@ -41,12 +46,19 @@
                         <p>Welcome to the AAM Integrated Machine Learning Expanded Stardating System (AIMLESS). <br />
                             This AIMLESS CLI interface has been provided for your convenience. <br /> If you experience
                             any difficulties please contact the SYSADM. <br />Thank you for choosing AIMLESS services.
-                        </p><br />
+                        </p>
+                        <br />
                         <div id="login-panel">
-                            <label>User Name:</label><input id="username" type="text"></input>
-                            <label>Password: </label><input id="password" type="password"></input>
+                            <div><label>User Name:</label><input id="username" type="text"></input></div>
+                            <div><label>Password: </label><input id="password" type="password"></input></div>
                         </div>
-
+                        <br />
+                        <div>
+                            <span class="hidden dev-oops">
+                                <p>ERROR: User Name or Password incorrect. Contact the SYSADM!</p>
+                                <p>!--TODO: This password changes regularly. I need a way to remember it. (P2) --></p>
+                            </span>
+                        </div>
                     </div>
                     <div id="interface" class="hidden">
                         <div id="command-history">
@@ -60,13 +72,9 @@
                 <div class="footer">
                     <div>
                         <button type="button" id="login-button" class="button">LOGIN</button>
-                        <span class="hidden dev-oops">
-                            <br /> ERROR: User Name or Password incorrect. Contact the SYSADM!
-                            <br />!--TODO: (P2) This password changes regularly. I need a way to remember it. -->
-                        </span>
                     </div>
                     <div>
-                        <button type="button" id="logout-button" class="button">LOGOUT</button>
+                        <button type="button" id="logout-button" class="button hidden">LOGOUT</button>
                     </div>
                 </div>
             </div>

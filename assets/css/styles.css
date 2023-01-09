@@ -403,6 +403,35 @@ input[type=submit]:hover,
   top: 7%;
 }
 
+#login-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls-container {
+  padding: 3vh;
+  position: fixed;
+  width: 30vw;
+  height: 56vh;
+  right: 0;
+  bottom: 0;
+}
+
+.speaker {
+  position: absolute;
+  background: repeating-linear-gradient(to right, rgb(184, 184, 184), rgb(184, 184, 184) 3px, #333333 3px, #333333 6px);
+  bottom: 3vh;
+  width: 15vw;
+  height: 10vh;
+  border: 5px gray solid;
+  box-shadow: inset 5px 5px 11px rgba(0, 0, 0, 0.8705882353), inset -1px -1px 7px rgba(0, 0, 0, 0.8705882353), 5px 5px 11px rgba(0, 0, 0, 0.8705882353), 0px 0px 7px rgba(0, 0, 0, 0.8705882353);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
 .note {
   color: #333;
   position: relative;
